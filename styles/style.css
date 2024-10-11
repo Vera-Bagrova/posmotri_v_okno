@@ -47,6 +47,10 @@ ol {
   inline-size: 1140px;
   gap: 30px;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+  padding-top: 132px;
+>>>>>>> 59e3fd98508816b9934f2af1ac80d6ce0ca16569
 }
 
 .result {
