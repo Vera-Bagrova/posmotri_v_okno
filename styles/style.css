@@ -10,6 +10,7 @@ html {
 
 .page {
   inline-size: 1200px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -46,11 +47,7 @@ ol {
   align-items: end;
   inline-size: 1140px;
   gap: 30px;
-  margin: 0 auto;
-<<<<<<< HEAD
-=======
-  padding-top: 132px;
->>>>>>> 59e3fd98508816b9934f2af1ac80d6ce0ca16569
+  margin: auto;
 }
 
 .result {
@@ -95,6 +92,8 @@ ol {
 .search-form__label {
   display: flex;
   width: fit-content;
+  align-items: center;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -135,8 +134,11 @@ ol {
   border-style: solid;
   border-color: #fff;
   min-width: 225px;
+  color: inherit;
+}
+
+.search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
-  cursor: pointer;
 }
 
 .search-form__textfield:focus {
@@ -235,7 +237,7 @@ ol {
 
 .content__accent {
   color: rgb(255 255 255 / 0.3);
-  line-height: 75px;
+  line-height: 76px;
 }
 
 .content__list {
@@ -295,6 +297,10 @@ ol {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px;
 }
 
 .content__video-card-description {
